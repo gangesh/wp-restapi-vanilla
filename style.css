@@ -1,0 +1,30 @@
+body {
+  background-color: #eee;
+}
+.posts {
+  margin: 40px 0;
+}
+.post-thumbnail {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.post-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.load-more {
+  margin-bottom: 40px;
+}
+
+.post-item a {
+  color: #f60;
+}
+
+.post-item a:hover {
+  color: #f90;
+  text-decoration: none;
+}

@@ -80,25 +80,25 @@ const fetchPosts = ({
 
     // Where the magic happens
     // Checks if IntersectionObserver is supported
-    //   if ('IntersectionObserver' in window) {
+    // if ('IntersectionObserver' in window) {
 
     //     const loadMoreCallback = (entries, observer) => {
-    //       entries.forEach((btn) => {
-    //         if (btn.isIntersecting && postsLoaded === true) {
-    //           postsLoaded = false;
-    //           loadContent();
-    //         }
-    //       });
+    //         entries.forEach((btn) => {
+    //             if (btn.isIntersecting && postsLoaded === true) {
+    //                 postsLoaded = false;
+    //                 loadContent();
+    //             }
+    //         });
     //     };
 
     //     // Intersection Observer options
     //     const options = {
-    //       threshold: 1.0 // Execute when button is 100% visible
+    //         threshold: 1.0 // Execute when button is 100% visible
     //     };
 
     //     let loadMoreObserver = new IntersectionObserver(loadMoreCallback, options);
     //     loadMoreObserver.observe(btnLoadMore);
-    //   }
+    // }
 
 
     btnLoadMore.addEventListener('click', () => {
@@ -110,7 +110,7 @@ const fetchPosts = ({
     // return {
     //     init: loadContent
     // };
-    return loadContent;
+    return loadContent();
 
 };
 
